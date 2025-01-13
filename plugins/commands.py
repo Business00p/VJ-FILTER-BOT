@@ -294,10 +294,10 @@ async def start(client, message):
                     )
                 if STREAM_MODE == True:
                     button = [[
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('⚡Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ⚡', url=f'https://t.me/{SUPPORT_CHAT}'),
+                        InlineKeyboardButton('👻 Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ♻️', url=CHNL_LNK)
                     ],[
-                        InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url=OWNER_LNK)
+                        InlineKeyboardButton('👩🏻‍💻 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👩🏻‍💻', url=OWNER_LNK)
                     ],[
                         InlineKeyboardButton("🚀 Fast Download 🚀", url=download),
                         InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
@@ -306,10 +306,10 @@ async def start(client, message):
                     ]]
                 else:
                     button = [[
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('⚡Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ⚡', url=f'https://t.me/{SUPPORT_CHAT}'),
+                        InlineKeyboardButton('👻 Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ♻️', url=CHNL_LNK)
                     ],[
-                        InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url=OWNER_LNK)
+                        InlineKeyboardButton('👩🏻‍💻 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👩🏻‍💻', url=OWNER_LNK)
                     ]]
                 msg = await client.send_cached_media(
                     chat_id=message.from_user.id,
@@ -403,10 +403,10 @@ async def start(client, message):
                     )
                 if STREAM_MODE == True:
                     button = [[
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('⚡Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ⚡', url=f'https://t.me/{SUPPORT_CHAT}'),
+                        InlineKeyboardButton('👻 Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ♻️', url=CHNL_LNK)
                     ],[
-                        InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url=OWNER_LNK)
+                        InlineKeyboardButton('👩🏻‍💻 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👩🏻‍💻', url=OWNER_LNK)
                     ],[
                         InlineKeyboardButton("🚀 Fast Download 🚀", url=download),
                         InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
@@ -415,10 +415,10 @@ async def start(client, message):
                     ]]
                 else:
                     button = [[
-                        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                        InlineKeyboardButton('⚡Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ⚡', url=f'https://t.me/{SUPPORT_CHAT}'),
+                        InlineKeyboardButton('👻 Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ♻️', url=CHNL_LNK)
                     ],[
-                        InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url=OWNER_LNK)
+                        InlineKeyboardButton('👩🏻‍💻 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👩🏻‍💻', url=OWNER_LNK)
                     ]]
                 try:
                     p = await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False, reply_markup=InlineKeyboardMarkup(button))
@@ -539,16 +539,16 @@ async def start(client, message):
                         InlineKeyboardButton("🕵️ How To Open Link & Verify ❓", url=VERIFY_TUTORIAL)
                     ]]
                     await message.reply_text(
-                        text="<b> <blockquote>҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
+                        text="<b> <blockquote>🪶🦚राधे राधे𓃔🦚 \n ҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
                         protect_content=True,
                         reply_markup=InlineKeyboardMarkup(btn)
                     )
                     return
             button = [[
-                InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('⚡Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ⚡', url=f'https://t.me/{SUPPORT_CHAT}'),
+                InlineKeyboardButton('👻 Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ♻️', url=CHNL_LNK)
             ],[
-                InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url=OWNER_LNK)
+                InlineKeyboardButton("👩🏻‍💻 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👩🏻‍💻", url=OWNER_LNK)
             ]]
             if STREAM_MODE == True:
                 button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')])
@@ -601,16 +601,16 @@ async def start(client, message):
                         InlineKeyboardButton("🕵️ How To Open Link & Verify ❓", url=VERIFY_TUTORIAL)
                     ]]
                     await message.reply_text(
-                        text="<b> <blockquote>҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
+                        text="<b> <blockquote>🪶🦚राधे राधे𓃔🦚 \n  ҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
                         protect_content=True,
                         reply_markup=InlineKeyboardMarkup(btn)
                     )
                     return
             button = [[
-                InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                InlineKeyboardButton('⚡Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ⚡', url=f'https://t.me/{SUPPORT_CHAT}'),
+                InlineKeyboardButton('👻 Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ♻️', url=CHNL_LNK)
             ],[
-                InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url=OWNER_LNK)
+                InlineKeyboardButton("👩🏻‍💻 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👩🏻‍💻", url=OWNER_LNK)
             ]]
             if STREAM_MODE == True:
                 button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')])
@@ -665,16 +665,16 @@ async def start(client, message):
                 InlineKeyboardButton("🕵️ How To Open Link & Verify ❓", url=VERIFY_TUTORIAL)
             ]]
             await message.reply_text(
-                text="<b> <blockquote>҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
+                text="<b> <blockquote>🪶🦚राधे राधे𓃔🦚 \n  ҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
                 protect_content=True,
                 reply_markup=InlineKeyboardMarkup(btn)
             )
             return
     button = [[
-        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-        InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+        InlineKeyboardButton('⚡Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ⚡', url=f'https://t.me/{SUPPORT_CHAT}'),
+        InlineKeyboardButton('👻 Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ♻️', url=CHNL_LNK)
     ],[
-        InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url=OWNER_LNK)
+        InlineKeyboardButton("👩🏻‍💻 𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥 👩🏻‍💻 ", url=OWNER_LNK)
     ]]
     if STREAM_MODE == True:
         button.append([InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')])
