@@ -534,12 +534,12 @@ async def start(client, message):
             if not await db.has_premium_access(message.from_user.id):
                 if not await check_verification(client, message.from_user.id) and VERIFY == True:
                     btn = [[
-                        InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                        InlineKeyboardButton("♻️ Verify 🎭", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                     ],[
-                        InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
+                        InlineKeyboardButton("🕵️ How To Open Link & Verify ❓", url=VERIFY_TUTORIAL)
                     ]]
                     await message.reply_text(
-                        text="<b>You are not verified !\nKindly verify to continue !</b>",
+                        text="<b> <blockquote>҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
                         protect_content=True,
                         reply_markup=InlineKeyboardMarkup(btn)
                     )
@@ -596,12 +596,12 @@ async def start(client, message):
             if not await db.has_premium_access(message.from_user.id):
                 if not await check_verification(client, message.from_user.id) and VERIFY == True:
                     btn = [[
-                        InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                        InlineKeyboardButton("♻️ Verify.🎭", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                     ],[
-                        InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
+                        InlineKeyboardButton("🕵️ How To Open Link & Verify ❓", url=VERIFY_TUTORIAL)
                     ]]
                     await message.reply_text(
-                        text="<b>You are not verified !\nKindly verify to continue !</b>",
+                        text="<b> <blockquote>҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
                         protect_content=True,
                         reply_markup=InlineKeyboardMarkup(btn)
                     )
@@ -635,7 +635,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(button)
             )
             btn = [[
-                InlineKeyboardButton("Get File Again", callback_data=f'del#{file_id}')
+                InlineKeyboardButton("💱 Get File Again 💱", callback_data=f'del#{file_id}')
             ]]
             k = await msg.reply("<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",quote=True)
             await asyncio.sleep(600)
@@ -660,12 +660,12 @@ async def start(client, message):
     if not await db.has_premium_access(message.from_user.id):
         if not await check_verification(client, message.from_user.id) and VERIFY == True:
             btn = [[
-                InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                InlineKeyboardButton("♻️ Verify 🎭", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
             ],[
-                InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
+                InlineKeyboardButton("🕵️ How To Open Link & Verify ❓", url=VERIFY_TUTORIAL)
             ]]
             await message.reply_text(
-                text="<b>You are not verified !\nKindly verify to continue !</b>",
+                text="<b> <blockquote>҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
                 protect_content=True,
                 reply_markup=InlineKeyboardMarkup(btn)
             )
@@ -686,7 +686,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(button)
     )
     btn = [[
-        InlineKeyboardButton("Get File Again", callback_data=f'del#{file_id}')
+        InlineKeyboardButton("💱 Get File Again 💱", callback_data=f'del#{file_id}')
     ]]
     k = await msg.reply("<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",quote=True)
     await asyncio.sleep(600)
