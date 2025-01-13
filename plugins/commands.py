@@ -539,7 +539,7 @@ async def start(client, message):
                         InlineKeyboardButton("🕵️ How To Open Link & Verify ❓", url=VERIFY_TUTORIAL)
                     ]]
                     await message.reply_text(
-                        text="<b> <blockquote>🪶🦚राधे राधे𓃔🦚 \n ҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
+                        text="<b> <blockquote>🦚 राधे राधे 🦚\n\n ҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
                         protect_content=True,
                         reply_markup=InlineKeyboardMarkup(btn)
                     )
@@ -601,7 +601,7 @@ async def start(client, message):
                         InlineKeyboardButton("🕵️ How To Open Link & Verify ❓", url=VERIFY_TUTORIAL)
                     ]]
                     await message.reply_text(
-                        text="<b> <blockquote>🪶🦚राधे राधे𓃔🦚 \n  ҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
+                        text="<b> <blockquote>🦚 राधे राधे 🦚 \n\n  ҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
                         protect_content=True,
                         reply_markup=InlineKeyboardMarkup(btn)
                     )
@@ -635,7 +635,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(button)
             )
             btn = [[
-                InlineKeyboardButton("💱 Get File Again 💱", callback_data=f'del#{file_id}')
+                InlineKeyboardButton("♻️ Get File Again ♻️", callback_data=f'del#{file_id}')
             ]]
             k = await msg.reply("<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",quote=True)
             await asyncio.sleep(600)
@@ -665,7 +665,7 @@ async def start(client, message):
                 InlineKeyboardButton("🕵️ How To Open Link & Verify ❓", url=VERIFY_TUTORIAL)
             ]]
             await message.reply_text(
-                text="<b> <blockquote>🪶🦚राधे राधे𓃔🦚 \n  ҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
+                text="<b> <blockquote>🦚 राधे राधे 🦚 \n\n  ҉ ҉ 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 ҉ 𝙩𝙤 ҉ 𝙏𝙫 ҉ 𝙎𝙝𝙤𝙬</blockquote> 👋 Hello Boy's And Girl's \n You are not verified !\nKindly verify to continue !</b>",
                 protect_content=True,
                 reply_markup=InlineKeyboardMarkup(btn)
             )
@@ -686,7 +686,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(button)
     )
     btn = [[
-        InlineKeyboardButton("💱 Get File Again 💱", callback_data=f'del#{file_id}')
+        InlineKeyboardButton("♻️ Get File Again ♻️", callback_data=f'del#{file_id}')
     ]]
     k = await msg.reply("<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie File/Video will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to your Saved Messages and Start Download there</i></b>",quote=True)
     await asyncio.sleep(600)
