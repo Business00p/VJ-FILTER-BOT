@@ -2,7 +2,7 @@
 import re
 from pyrogram import Client, filters
 from pyrogram.types import ReplyKeyboardMarkup
-from database.config_db import mdb
+from users_chats_db.py import mdb
 
 # most search commands
 @Client.on_message(filters.command('most'))
