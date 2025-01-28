@@ -6,8 +6,6 @@
 
 import sys, glob, importlib, logging, logging.config, pytz, asyncio
 from pathlib import Path
-from pyrogram.errors import UserNotParticipant
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
@@ -34,34 +32,6 @@ ppath = "plugins/*.py"
 files = glob.glob(ppath)
 TechVJBot.start()
 loop = asyncio.get_event_loop()
-
-async def is_subscribed(client, user_id):
-    for channel in AUTH_CHANNELS:
-        try:
-            await client.get_chat_member(channel, user_id)
-            return True  # User is a member of this channel
-        except UserNotParticipant:
-            continue  # Check the next channel
-        except Exception as e:
-            print(f"Error checking subscription: {e}")
-            return False
-    return False  # User is not a member of any channel
-
-@Client.on_message(filters.private)
-async def check_auth_channels(client, message):
-    if not await is_subscribed(client, message.from_user.id):
-        buttons = [
-            [InlineKeyboardButton("Join Channel 1", url=f"https://t.me/{AUTH_CHANNELS[0]}")],
-            [InlineKeyboardButton("Join Channel 2", url=f"https://t.me/{AUTH_CHANNELS[1]}")]
-        ]
-        await message.reply_text(
-            "You must join our channels to use this bot.",
-            reply_markup=InlineKeyboardMarkup(buttons)
-        )
-        return
-    await message.reply_text("Welcome to the bot!")
-    
-
 
 async def start():
     print('\n')
