@@ -3,9 +3,12 @@
 # Ask Doubt on telegram @KingVJ01
 
 from pyrogram import Client, filters
-from info import CHANNELS
-from database.ia_filterdb import save_file
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from info import CHANNELS, MOVIE_UPDATE_CHANNEL, ADMINS , LOG_CHANNEL
+from database.ia_filterdb import save_file, unpack_new_file_id
 
+processed_movies = set()
+media_filter = filters.document | filters.video
 media_filter = filters.document | filters.video
 
 @Client.on_message(filters.chat(CHANNELS) & media_filter)
