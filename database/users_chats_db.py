@@ -4,6 +4,7 @@
 
 import re
 from pymongo.errors import DuplicateKeyError
+from motor.motor_asyncio import AsyncIOMotorClient
 import motor.motor_asyncio
 from pymongo import MongoClient
 from info import DATABASE_NAME, USER_DB_URI, OTHER_DB_URI, CUSTOM_FILE_CAPTION, IMDB, IMDB_TEMPLATE, MELCOW_NEW_USERS, BUTTON_MODE, SPELL_CHECK_REPLY, PROTECT_CONTENT, AUTO_DELETE, MAX_BTN, AUTO_FFILTER, SHORTLINK_API, SHORTLINK_URL, SHORTLINK_MODE, TUTORIAL, IS_TUTORIAL
@@ -66,6 +67,7 @@ class Database:
         self.grp = self.db.groups
         self.users = self.db.uersz
         self.bot = self.db.clone_bots
+        self.movies_update_channel = mydb.movies_update_channel
 
 
     def new_user(self, id, name):
@@ -306,7 +308,16 @@ class Database:
     async def get_save(self, id):
         user = await self.col.find_one({'id': int(id)})
         return user.get('save', False) 
-    
+        
+    async def movies_update_channel_id(self , id=None):
+        if id is None:
+            myLinks = await self.movies_update_channel.find_one({})
+            if myLinks is not None:
+                return myLinks.get("id")
+            else:
+                return None
+        return await self.movies_update_channel.update_one({} , {'$set': {'id': id}} , upsert=True)
+        
 
 db = Database(USER_DB_URI, DATABASE_NAME)
 
